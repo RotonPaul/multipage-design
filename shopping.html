@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <!-- favicon icon -->
+  <link rel="shortcut icon" href="images/logo.png" />
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&family=The+Nautigal:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap 5 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- nice number css -->
+  <link rel="stylesheet" href="css/jquery.nice-number.css">
+  <!-- slick css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- preloader start -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+  <!-- preloader end -->
+  <!-- back2top button -->
+  <a href="#" class="btn  back2top"><i class="fa fa-angle-up"></i></a>
+  <!-- back2top button -->
+  <!-- top header start -->
+  <header id="top_bar" class="top_bar">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto d-sm-none d-md-none d-lg-block">
+          <div class="top_bar_left d-flex justify-content-center align-items-center">
+            <div class="language">
+              <select id="lang" class="text-center">
+                <option value="Eng">Eng</option>
+                <option value="Bangla">Bangla</option>
+                <option value="Hindi">Hindi</option>
+              </select>
+            </div>
+            <div class="money">
+              <select id="price" class="text-center">
+                <option value="USD$">USD $</option>
+                <option value="Tk.">Tk.</option>
+                <option value="Rs.">Rs.</option>
+              </select>
+            </div>
+            <p>Toll Free: +123 4567 8900</p>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="top_bar_right">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+              <li><a href="#"><i class="fa-solid fa-user"></i>My Account</a></li>
+              <li><a href="#" class="log_in" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a><a href="#"
+                  data-bs-toggle="modal" data-bs-target="#exampleModal2"> Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- top header end -->
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light menu_bg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo.png">
+      </a>
+      <button class="navbar-toggler menu_btn" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse menu_bar" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">about </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="product.html">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="shopping.html">shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chekout.html">chekout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="search_link">
+          <div class=" search_form d-flex justify-content-end align-items-center">
+            <input type="text" class="form-control search_box">
+            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass search_icon"></i></a>
+          </div>
+        </div>
+        <div class="items_2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> 2 Items</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <!-- product title part start -->
+  <section id="about_title" class="about_title prduct_title">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3">
+          <div class="about_home text-center">
+            <h4>Shopping Cart</h4>
+            <a href="#">
+              <h6>Home <i class="fa-solid fa-angles-right"></i> <span>Shopping Cart</span></h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- product title part end -->
+  <!-- shopping product part start -->
+  <section class="shopping_product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-12 d-flex justify-content-center ">
+          <div class="shopping_items">
+            <table>
+              <tr>
+                <th>
+                  <h5>Product & Color</h5>
+                </th>
+                <th>
+                  <h5>Unit Price</h5>
+                </th>
+                <th>
+                  <h5>Quantity</h5>
+                </th>
+                <th>
+                  <h5>Total Price</h5>
+                </th>
+                <th>
+                  <h5>Remove Item</h5>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product_details">
+                    <div class="product_img">
+                      <img src="./images/product_1.jpg" alt="watch.jpg">
+                    </div>
+                    <div class="product_shop_text">
+                      <h6>Samsung Smart Watch</h6>
+                      <div class="p_star_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <p>Color : Sliver</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td> <input type="number" value="1"></td>
+                <td>
+                  <h6>$99.00</h6>
+                </td>
+                <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="cuppon_form">
+            <form action="#">
+              <div class="form_head mb-3">
+                <h5>Have a coupon?</h5>
+              </div>
+              <div class="cuppon_code d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter Your Code" aria-label="email">
+                <button class="btn" type="submit">send</button>
+              </div>
+              <table>
+                <tr>
+                  <th>
+                    <h6>Cart Total</h6>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <h6> <span>Cart Subtotal</span> <span>$ 99.00</span></h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6> <span>(+) Shipping</span> <span>$ 10.00</span></h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6> <span>(-) Discount</span> <span>$ 20.00</span></h6>
+                  </td>
+                </tr>
+                <tr class="border_top">
+                  <td>
+                    <h6> <span>Grand Total</span> <span>$ 98.00</span></h6>
+                  </td>
+                </tr>
+              </table>
+              <div class="update_btn mt-5">
+                <button class="btn" type="submit">Upadate Cart</button>
+                <button class="btn" type="submit">Proceed</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--shopping product  part end -->
+  <!-- partner part start -->
+  <div id="partner" class="partner">
+    <div class="container">
+      <div class="partner_slider">
+        <div class="partner_slider_items">
+          <img src="./images/partner1.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner3.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner4.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner5.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partner part end -->
+
+  <!-- contact part start -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <div class="contact_logo mb-5">
+              <a href="#"> <img src="./images/logo_white.png" alt="logo.png"></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore.
+            </p>
+            <p class="mt-4"> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>Contact US</h5>
+            <div class="contact_address">
+              <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>1234, Parkstreet Avenue, NewYork</span></p>
+              <p><i class="fa-solid fa-phone"></i> <span>+123 456 78900, +009 876 54321</span></p>
+              <p><i class="fa-solid fa-envelope"></i> <span>info@e-buy.com, e-buy@info.com</span></p>
+              <p><i class="fa-solid fa-globe"></i> <span> www.e-buy.com, www.infobuy.com</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>My Account</h5>
+            <div class="contact_link">
+              <a href="#">My Account</a>
+              <a href="#">Wishlist</a>
+              <a href="#">Shopping Cart</a>
+              <a href="#">Compare</a>
+              <a href="#">Checkout</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>Sign Up For Newsletter</h5>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Your E-mail" aria-label="email">
+              <button class="btn" type="submit">submit</button>
+            </form>
+            <div class="follow_link">
+              <h5>Follow me on</h5>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact part end -->
+  <!-- footer part start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h6>Copyright &copy; 2018. All right reserved by <span>E-BUY</span> </h6>
+        </div>
+        <div class="col-lg-6">
+          <div class="cards_img text-end">
+            <img src="./images/cards.png" alt="cards.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+  <!-- login Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content login_box">
+        <div class="modal-header login_title">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 user_name">
+              <label for="exampleInputEmail1" class="form-label">User Name</label>
+              <i class="fa-solid fa-user"></i>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 pass_word">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <div class="login_btn text-center">
+              <button type="button" class="btn">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- register Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content login_box">
+        <div class="modal-header login_title">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up Here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 user_name">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 pass_word">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="col-lg-6">
+                  <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+            </div>
+            <div class="login_btn text-center">
+              <button type="button" class="btn">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- register  Modal -->
+
+
+
+
+
+
+  <!-- jquary script -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- nice number script -->
+  <script src="js/jquery.nice-number.min.js"></script>
+  <!-- slick script -->
+  <script src="js/slick.min.js"></script>
+  <script src="./js/nice_custom.js"></script>
+  <!-- custom script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

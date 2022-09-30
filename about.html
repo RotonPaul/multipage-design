@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- favicon icon -->
+  <link rel="shortcut icon" href="images/logo.png" />
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&family=The+Nautigal:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap 5 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- slick css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive css -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- preloader start -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+  <!-- preloader end -->
+  <!-- back2top button -->
+  <a href="#" class="btn  back2top"><i class="fa fa-angle-up"></i></a>
+  <!-- back2top button -->
+  <!-- top header start -->
+  <header id="top_bar" class="top_bar">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto d-md-none d-sm-none  d-lg-block">
+          <div class="top_bar_left d-flex justify-content-center align-items-center">
+            <div class="language">
+              <select id="lang" class="text-center">
+                <option value="Eng">Eng</option>
+                <option value="Bangla">Bangla</option>
+                <option value="Hindi">Hindi</option>
+              </select>
+            </div>
+            <div class="money">
+              <select id="price" class="text-center">
+                <option value="USD$">USD $</option>
+                <option value="Tk.">Tk.</option>
+                <option value="Rs.">Rs.</option>
+              </select>
+            </div>
+            <p>Toll Free: +123 4567 8900</p>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="top_bar_right">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+              <li><a href="#"><i class="fa-solid fa-user"></i>My Account</a></li>
+              <li><a href="#" class="log_in" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a><a href="#"
+                  data-bs-toggle="modal" data-bs-target="#exampleModal2"> Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- top header end -->
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light menu_bg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo.png">
+      </a>
+      <button class="navbar-toggler menu_btn" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse menu_bar" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">about </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shopping.html">shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="search_link">
+          <div class=" search_form d-flex justify-content-end align-items-center">
+            <input type="text" class="form-control search_box">
+            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass search_icon"></i></a>
+          </div>
+        </div>
+        <div class="items_2">
+          <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> 2 Items</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <!-- about title part start -->
+  <section id="about_title" class="about_title">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-3">
+          <div class="about_home text-center">
+            <h4>About Us</h4>
+            <a href="#">
+              <h6>Home <i class="fa-solid fa-angles-right"></i> <span>About</span></h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about title part end -->
+  <!-- about banner part start -->
+  <div id="about_banner">
+    <div class="container">
+      <div class="row about_box">
+        <div class="col-lg-7 col-md-12 col-sm-12">
+          <div class="about_img">
+            <img src="./images/about_img1.jpg" alt="product.jpg" class="w-100">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12  about_text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodidunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrudtion ullamco laboris nisi ut aliquip ex ea comm. Duis aute
+            irure dolor in reprehrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia desnt mollit anim id est
+            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+          <p>laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam uptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+            quia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about banner part end -->
+  <!-- about counter part start -->
+  <section class="about_counter">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-lg col-sm-4 col-xs-6">
+          <div class="about_counter_items">
+            <h2 id="number_1">261</h2>
+            <h6>Cup of Tea</h6>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-4 col-xs-6">
+          <div class="about_counter_items">
+            <h2 id="number_2">718</h2>
+            <h6>Products Sold</h6>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-4 col-xs-6">
+          <div class="about_counter_items">
+            <h2 id="number_3">991</h2>
+            <h6>Happy Clients</h6>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-4 col-xs-6">
+          <div class="about_counter_items">
+            <h2 id="number_4">369</h2>
+            <h6>Total Outlets</h6>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-4 col-xs-6">
+          <div class="about_counter_items">
+            <h2 id="number_5">200</h2>
+            <h6>Award Win</h6>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about counter part end -->
+  <!-- designer part start -->
+  <section id="design" class="designer">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6">
+          <div class="section_intro text-center">
+            <h3>Our Designer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row designer_main">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="designer_items">
+            <div class="designer_img feature_img">
+              <img src="./images/designer1.jpg" alt="person.jpg" class="w-100">
+              <div class="designer_overley feature_overley">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="designer_text">
+              <h5>Sakeba Aney</h5>
+              <h6>Web Designer</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="designer_items">
+            <div class="designer_img feature_img">
+              <img src="./images/designer2.jpg" alt="person.jpg" class="w-100">
+              <div class="designer_overley feature_overley">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="designer_text">
+              <h5>Taimur Mony</h5>
+              <h6>Graphic Designer</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="designer_items">
+            <div class="designer_img feature_img">
+              <img src="./images/designer3.jpg" alt="person.jpg" class="w-100">
+              <div class="designer_overley feature_overley">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="designer_text">
+              <h5>Anamika Jeny</h5>
+              <h6>Web Developer</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="designer_items">
+            <div class="designer_img feature_img">
+              <img src="./images/designer4.jpg" alt="person.jpg" class="w-100">
+              <div class="designer_overley feature_overley">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="designer_text">
+              <h5>Ishtiaq Jony</h5>
+              <h6>Graphic Designer</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- designer part end -->
+  <!-- partner part start -->
+  <div id="partner" class="partner">
+    <div class="container">
+      <div class="partner_slider">
+        <div class="partner_slider_items">
+          <img src="./images/partner1.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner3.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner4.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner5.jpg" alt="partner.jpg">
+        </div>
+        <div class="partner_slider_items">
+          <img src="./images/partner2.jpg" alt="partner.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partner part end -->
+
+
+
+  <!-- contact part start -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <div class="contact_logo mb-5">
+              <a href="#"> <img src="./images/logo_white.png" alt="logo.png"></a>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore.
+            </p>
+            <p class="mt-4"> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>Contact US</h5>
+            <div class="contact_address">
+              <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>1234, Parkstreet Avenue, NewYork</span></p>
+              <p><i class="fa-solid fa-phone"></i> <span>+123 456 78900, +009 876 54321</span></p>
+              <p><i class="fa-solid fa-envelope"></i> <span>info@e-buy.com, e-buy@info.com</span></p>
+              <p><i class="fa-solid fa-globe"></i> <span> www.e-buy.com, www.infobuy.com</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>My Account</h5>
+            <div class="contact_link">
+              <a href="#">My Account</a>
+              <a href="#">Wishlist</a>
+              <a href="#">Shopping Cart</a>
+              <a href="#">Compare</a>
+              <a href="#">Checkout</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="contact_items">
+            <h5>Sign Up For Newsletter</h5>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Your E-mail" aria-label="email">
+              <button class="btn" type="submit">submit</button>
+            </form>
+            <div class="follow_link">
+              <h5>Follow me on</h5>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact part end -->
+  <!-- footer part start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h6>Copyright &copy; 2018. All right reserved by <span>E-BUY</span> </h6>
+        </div>
+        <div class="col-lg-6">
+          <div class="cards_img text-end">
+            <img src="./images/cards.png" alt="cards.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+  <!-- login Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content login_box">
+        <div class="modal-header login_title">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 user_name">
+              <label for="exampleInputEmail1" class="form-label">User Name</label>
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 pass_word">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <div class="login_btn text-center">
+              <button type="button" class="btn">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- register Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content login_box">
+        <div class="modal-header login_title">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up Here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 user_name">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 pass_word">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="col-lg-6">
+                  <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+            </div>
+            <div class="login_btn text-center">
+              <button type="button" class="btn">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- register  Modal -->
+
+
+
+
+
+
+
+  <!-- jquary script -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- slick script -->
+  <script src="js/slick.min.js"></script>
+  <!-- counter script -->
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/countMe.min.js"></script>
+  <!-- custom script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
